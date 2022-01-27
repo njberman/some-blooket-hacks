@@ -1,5 +1,5 @@
 const box = prompt("Which box would you like to open (EXAMPLE: Space)? ");
-const numberOfBoxes = prompt("How many boxes would you like to open? ")
+const numberOfBoxes = prompt("How many boxes would you like to open? ");
 
 let data = undefined;
 
@@ -35,6 +35,5 @@ function time() {
               "credentials": "include"
             }).then(r => r.json()).then(r => {console.log(r.unlockedBlook, time());blooks += (r.unlockedBlook + '\n');if(i == numberOfBoxes - 1){alert(blooks)}});
         };
-        res(blooks);
     }))
 })();
